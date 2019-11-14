@@ -24,3 +24,14 @@ Route::post('/gastos','GastosController@store')->name('gasto.store');
 Route::get('/ingresos','IngresosController@index')->name('ing');
 Route::get('/ingresos/create','IngresosController@create');
 Route::post('/ingresos','IngresosController@store')->name('ingreso.store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/redirect','SocialController@redirect');
+Route::get('/callback','SocialController@callback');
+
+
+Route::get('/github','SocialController@github');
+Route::get('/github/f','SocialController@sgithub');
