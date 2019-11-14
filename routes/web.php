@@ -26,6 +26,10 @@ Route::get('/ingresos/create','IngresosController@create');
 Route::post('/ingresos','IngresosController@store')->name('ingreso.store');
 
 Auth::routes();
+Route::view('/contact', 'contact')->name('contact');
+Route::post('contact','MessageController@store');
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
