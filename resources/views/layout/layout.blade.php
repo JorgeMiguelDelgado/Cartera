@@ -13,7 +13,7 @@
         <h1 class="navbar-brand"> @yield('ntitle') </h1>
         <div class="collapse navbar-collapse">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/">Inicio</a>
+                <a class="nav-item nav-link" href="/">Salir</a>
                 <a class="nav-item nav-link" href="/gastos">Gastos</a>
                 <a class="nav-item nav-link" href="/ingresos">Ingresos</a>
                 <a class="nav-item nav-link" href="/contact">Acerca de Nosotros</a>

@@ -61,10 +61,10 @@
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                    <a class="btn btn-link" href="redirect">
+                                    <a class="btn btn-link" href="redirect/facebook">
                                         {{ __('Facebook') }}
                                     </a>
-                                    <a class="btn btn-link" href="github">
+                                    <a class="btn btn-link" href="redirect/github">
                                         {{ __('Github') }}
                                     </a>
                                 @endif

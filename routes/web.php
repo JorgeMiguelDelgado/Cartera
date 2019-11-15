@@ -33,9 +33,7 @@ Route::post('contact','MessageController@store');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/redirect','SocialController@redirect');
-Route::get('/callback','SocialController@callback');
+Route::get('/redirect/{provider}','SocialController@redirect');
+Route::get('/callback/{provider}','SocialController@callback');
 
 
-Route::get('/github','SocialController@github');
-Route::get('/github/f','SocialController@sgithub');

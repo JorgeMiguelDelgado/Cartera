@@ -3,24 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Redirect;
 use Socialite;
 class SocialController extends Controller
 {
 
-    public function redirect(){
-        return Socialite::driver('facebook')->redirect();
+    public function redirect($provider){
+        return Socialite::driver($provider)->redirect();
     }
-    public function callback(){
-        $user=Socialite::driver('facebook')->user();
-        return ($user->getAvatar());
+    public function callback($provider){
+        $user=Socialite::driver($provider)->user();
+        return Redirect::to('/ingresos');
     }
 
-    public function github(){
-        return Socialite::driver('github')->redirect();
-    }
-    public function sgithub(){
-              Socialite::driver('github')->user();
-        $user = Socialite::driver('github')->user();
-            
-    }
 }
