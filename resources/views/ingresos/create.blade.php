@@ -6,7 +6,7 @@
 <small class="text-muted">Registro de Nuevos Ingresos</small>
     </h1>
     <div class="container">
-        <form class="form-group" method="POST" action="{{route('ingreso.store')}}">
+        <form class="form-group" method="POST" action="{{route('ingreso')}}">
             @csrf
             <div class="form-group row">
                 <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>

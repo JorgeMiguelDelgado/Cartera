@@ -16,6 +16,7 @@
                 <a class="nav-item nav-link" href="/">Inicio</a>
                 <a class="nav-item nav-link" href="/gastos">Gastos</a>
                 <a class="nav-item nav-link" href="/ingresos">Ingresos</a>
+                <a class="nav-item nav-link" href="/contact">Acerca de Nosotros</a>
             </div>  
         </div>
     </nav>
@@ -23,7 +24,7 @@
     
 <style>
 body{
-    background-color:blue;
+    background-color:f5f5dc;
 }
 </style>
         @yield('content')
